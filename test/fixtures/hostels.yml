@@ -1,0 +1,55 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  landlord: one
+  hostel_name: MyString
+  location: MyString
+  price_per_month: 1.5
+  hostel_type: MyString
+  toilet: false
+  kitchen: false
+  wifi: false
+  study_room: false
+  balcony: false
+  gym: false
+  wardrobe: false
+  laundry_services: false
+  avaliable_units: 1
+  parking: false
+  room_type: MyString
+  hot_shower: false
+  garden: false
+  swimming_pool: false
+  air_conditioner: false
+  cctv_cameras: false
+  fire_extinguishers: false
+  first_aid_kits: false
+  smoke_alarm: false
+  description: MyText
+
+two:
+  landlord: two
+  hostel_name: MyString
+  location: MyString
+  price_per_month: 1.5
+  hostel_type: MyString
+  toilet: false
+  kitchen: false
+  wifi: false
+  study_room: false
+  balcony: false
+  gym: false
+  wardrobe: false
+  laundry_services: false
+  avaliable_units: 1
+  parking: false
+  room_type: MyString
+  hot_shower: false
+  garden: false
+  swimming_pool: false
+  air_conditioner: false
+  cctv_cameras: false
+  fire_extinguishers: false
+  first_aid_kits: false
+  smoke_alarm: false
+  description: MyText
