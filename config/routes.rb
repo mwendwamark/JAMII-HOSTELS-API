@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "/students", to: "students#index"
+  get "/student", to: "students#show"
+  post "/student-signup", to: "students#create"
+  post "/student-login", to: "students_sessions#create"
+  delete "/student-logout", to: "students_sessions#destroy"
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
-
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # Landlords Routes
+  get "/landlords", to: "landlords#index"
+  get "/landlord", to: "landlords#show"
+  post "/landlord-signup", to: "landlords#create"
+  post "/landlord-login", to: "landlords_sessions#create"
+  delete "/landlord-logout", to: "landlords_sessions#destroy"
 end
