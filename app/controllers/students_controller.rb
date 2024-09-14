@@ -17,7 +17,8 @@ class StudentsController < ApplicationController
       session[:student_id] = @student.id
       render json: @student, status: :created
     else
-      render json: @student.errors, status: :unprocessable_entity
+      # render json: @student.errors, status: :unprocessable_entity
+      render json: { errors: @student.errors.full_messages }, status: :unprocessable_entity
     end
   end
 

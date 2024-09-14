@@ -17,7 +17,8 @@ class LandlordsController < ApplicationController
       session[:landlord_id] = @landlord.id
       render json: @landlord, status: :created
     else
-      render json: @landlord.errors, status: :unprocessable_entity
+      # render json: @landlord.errors, status: :unprocessable_entity
+      render json: { errors: @landlord.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
