@@ -26,6 +26,10 @@ class CreateHostels < ActiveRecord::Migration[7.1]
       t.boolean :first_aid_kits
       t.boolean :smoke_alarm
       t.text :description
+      t.string :water_supply
+      t.boolean :buy_own_tokens
+      t.boolean :fully_furnished
+      t.boolean :security
 
       t.timestamps
     end
