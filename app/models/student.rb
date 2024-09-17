@@ -3,6 +3,7 @@ class Student < ApplicationRecord
 
   has_many :bookings, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  # has_one_attached :image
 
   # validations
   validates :email, :first_name, :last_name, :password, :password_confirmation, presence: true

@@ -2,7 +2,7 @@ class Landlord < ApplicationRecord
   has_secure_password
 
   has_many :hostels, dependent: :destroy
-  has_one_attached :avatar
+  # has_one_attached :image
 
   # validations
   validates :email, :first_name, :last_name, :password, :password_confirmation, presence: true
