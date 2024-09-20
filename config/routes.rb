@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   post "/landlord-signup", to: "landlords#create"
   post "/landlord-login", to: "landlords_sessions#create"
   delete "/landlord-logout", to: "landlords_sessions#destroy"
+
+  resources :hostels, only: [:index, :show, :create, :update, :destroy]
 end
